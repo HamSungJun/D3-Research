@@ -1,6 +1,11 @@
 # D3. Data-Driven-Documents
 
-## 1.기초 메소드
+## 1.선행지식
+
+- Scalable Vector Graphics (SVG)
+    - https://svgontheweb.com/ko/
+
+## 2.기초 메소드
 
 ### `select( "Selector" )` , `selectAll( "Selector" )`
 
@@ -115,6 +120,38 @@
 ```
 
 <hr>
+
+### `transition()`
+
+> 마지막으로 선택된 Selection 객체에 대해 CSS Transition 속성을 부여
+
+```javascript 1.6
+
+    import * as D3 from 'd3'
+
+    // DOM의 단일 HTML 요소를 선택 후 내부의 요소들을 선택하고 매치되지 못한 나머지 HTML 요소들을 삭제
+    D3.select("Selector").append("Tagname").style("Property","Value").transition().style("background-color","steelblue")
+
+```
+
+<hr>
+
+### `transition()`
+
+> 마지막으로 선택된 Selection 객체에 대해 CSS Transition 속성을 부여
+
+```javascript 1.6
+
+    import * as D3 from 'd3'
+
+    // DOM의 단일 HTML 요소를 선택 후 내부의 요소들을 선택하고 매치되지 못한 나머지 HTML 요소들을 삭제
+    D3.select("Selector").append("Tagname").style("Property","Value").transition().style("background-color","steelblue")
+
+```
+
+<hr>
+
+
 
 
 

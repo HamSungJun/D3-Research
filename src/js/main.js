@@ -10,7 +10,7 @@ const sampleLinearData2 = [4, 8, 15, 16, 23, 42];
 
 window.onload = () => {
 
-   D3.select(`body`).transition().duration(750).style("background-color","steelblue")
+   D3.select(`body`).append("div").style("width","200px").style("height","200px").transition().duration(750).style("background-color","steelblue")
 }
 
 
