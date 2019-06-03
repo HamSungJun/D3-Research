@@ -5,11 +5,13 @@ if (module.hot) {
 import * as D3 from 'd3'
 import '../css/main.css'
 
+const sampleLinearData = [1000,2000,3000,4000,5000,6000,7000,8000]
+const sampleLinearData2 = [4, 8, 15, 16, 23, 42];
+
 window.onload = () => {
 
-    let paragraph = document.createElement('h1')
-    let textContent = document.createTextNode('일반 JS 프로젝트입니다 실시간 변동중')
-    paragraph.appendChild(textContent)
-    document.body.append(paragraph)
-
+   D3.select(`body`).transition().duration(750).style("background-color","steelblue")
 }
+
+
+
